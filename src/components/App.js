@@ -5,8 +5,8 @@ import Dashboard from './Dashboard'
 import OpenedCard from './OpenedCard'
 
 const App = ({ fetchData, pokemons }) => {
-   const [value, setValue] = useState('')
-   useEffect(() => {
+  const [value, setValue] = useState('')
+  useEffect(() => {
     fetchData(0, 20)
   }, [])
 

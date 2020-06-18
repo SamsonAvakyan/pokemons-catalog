@@ -4,6 +4,13 @@
   margin-bottom: 2em;
   border-radius: 0.5em;
   height: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .card-image {
@@ -34,4 +41,8 @@
 
 .pokemon-id {
   margin-bottom: 1em;
+}
+
+.abilities {
+  margin-left: 1em;
 }

@@ -20,7 +20,7 @@ body {
 }
 
 .show-more-btn {
-  border: 1px solid rgb(44, 252, 221);
+  border: 1px solid transparent;
   outline: none;
   padding: 1em;
   border-radius: 0.5em;
@@ -29,4 +29,16 @@ body {
   display: block;
   cursor: pointer;
   margin-bottom: 4em;
+  transition: 0.5s;
+}
+
+.show-more-btn:hover {
+  background-color: rgba(44, 252, 221, 0.8);
+  transition: 0.5s;
+}
+
+.show-more-btn:active {
+  background-color: rgba(44, 252, 221, 0.4);
+  border: 1px solid rgb(44, 252, 221);
+  transition: 0.5s;
 }
