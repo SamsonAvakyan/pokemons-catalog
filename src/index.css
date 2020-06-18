@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  background-color: rgb(193, 193, 193);
+}
+
+.container {
+  width: 100%;
+}
+
+.search {
+  display: block;
+  margin: 6em auto;
+  outline: none;
+}
+
+.show-more-btn {
+  border: 1px solid rgb(44, 252, 221);
+  outline: none;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: rgb(44, 252, 221);
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}

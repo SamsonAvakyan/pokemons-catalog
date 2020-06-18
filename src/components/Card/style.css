@@ -1,0 +1,37 @@
+.card {
+  flex-basis: 28vw;
+  background-color: rgb(204, 206, 202);
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  height: 100%;
+}
+
+.card-image {
+  padding: 1em 0;
+}
+
+.card-image img {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-description {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.3em;
+  padding: 0.5em 0 1em 3em;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.pokemon-name {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.pokemon-id {
+  margin-bottom: 1em;
+}
