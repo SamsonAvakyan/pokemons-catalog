@@ -17,6 +17,11 @@ body {
   display: block;
   margin: 6em auto;
   outline: none;
+  border: transparent;
+  font-size: 20px;
+  text-align: center;
+  background-color: transparent;
+  position: relative;
 }
 
 .show-more-btn {

@@ -1,9 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import './style.css'
+
 
 const Card = ({ name, id, abilities }) => {
   return (
-    <div className="card">
+    <NavLink to={'/pokemons/' + id} className="card">
       <div className="card-image">
         <img
           src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`}
@@ -21,7 +24,7 @@ const Card = ({ name, id, abilities }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </NavLink>
   )
 }
 

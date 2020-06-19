@@ -4,7 +4,7 @@ const OpenedCard = () => {
   return (
     <div className="opened-card">
       <div className="card-image">
-        <img src="" alt="" />
+        <img src="" alt="pokemon" />
       </div>
       <div className="card-description">
         <span className="pokemon-name"></span>
