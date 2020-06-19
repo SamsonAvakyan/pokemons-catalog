@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Switch, Route, withRouter } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import Dashboard from './Dashboard'
 import OpenedCard from './OpenedCard'
@@ -19,20 +19,18 @@ const App = ({ fetchData, pokemons }) => {
 
   return (
     <div className="container">
+      <input
+        className="search"
+        type="search"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder="Pokemon query..."
+      />
+      <Dashboard pokemons={getVisiblePokemons()} />
+      <button className="show-more-btn" onClick={() => fetchData(0, 40)}>
+        Show more...
+      </button>
       <Switch>
-        <Route exact path="/pokemons/">
-          <input
-            className="search"
-            type="search"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            placeholder="Pokemon query..."
-          />
-          <Dashboard pokemons={getVisiblePokemons()} />
-          <button className="show-more-btn" onClick={() => fetchData(0, 40)}>
-            Show more...
-          </button>
-        </Route>
         <Route path="/pokemons/:id">
           <OpenedCard pokemons={pokemons} />
         </Route>
@@ -41,4 +39,4 @@ const App = ({ fetchData, pokemons }) => {
   )
 }
 
-export default withRouter(App)
+export default App
